@@ -1,5 +1,8 @@
 
 namespace dynamic_library{
+#ifdef WIN32
+    __declspec(dllexport)
+#endif
     void hello();
 }
 
