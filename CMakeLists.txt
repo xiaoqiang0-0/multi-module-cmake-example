@@ -11,6 +11,8 @@ add_subdirectory(dynamic-library)
 add_subdirectory(static-library)
 
 link_directories(${PROJECT_BINARY_DIR}/lib)
+#include(${PROJECT_BINARY_DIR}/export/dylib.cmake)
+#include(${PROJECT_BINARY_DIR}/export/stlib.cmake)
 
 add_executable(main src/main.cpp)
 
