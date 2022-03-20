@@ -7,6 +7,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/libs)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
+add_subdirectory(hello-service)
 add_subdirectory(dynamic-library)
 add_subdirectory(static-library)
 
